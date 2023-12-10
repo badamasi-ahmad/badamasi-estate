@@ -3,19 +3,22 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
-import Abaut from "./pages/abaut";
+import About from "./pages/about";
+import Header from './components/header';
 
 export default function App() {
   
-  return <BrowserRouter>
+  return( 
+  <BrowserRouter>
+  <Header/>
   <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="Profile" element={<Profile />}/>
-      <Route path="Abaut" element={<Abaut />}/>
-      <Route path="Sign-In" element={<SignIn />}/>
-      <Route path="Sign-Up" element={<SignUp />}/>
+      <Route path="About" element={<About />}/>
+      <Route path="SignIn" element={<SignIn />}/>
+      <Route path="SignUp" element={<SignUp />}/>
   </Routes>
   </BrowserRouter>
 
-  
+  );
 }
