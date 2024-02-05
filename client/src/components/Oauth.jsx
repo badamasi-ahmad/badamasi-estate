@@ -12,7 +12,7 @@ export default function Oauth() {
       try{
         const provider = new GoogleAuthProvider()
         const auth = getAuth(app)
-        const result = await signInWithPopup(auth, provider)
+        const result = await signInWithPopup(auth, provider);
 
         const res = await fetch('api/auth/google', {
           method: 'POST',
@@ -22,9 +22,10 @@ export default function Oauth() {
           body: JSON.stringify({ 
             name: result.user.displayName,
              email: result.user.email,
-              photo: result.user.photoURL}),
-        })
-        const data = res.json();
+              photo: result.user.photoURL
+            }),
+        });
+        const data = await res.json();
         dispatch(signInSuccess(data));
         navigate('/');
 

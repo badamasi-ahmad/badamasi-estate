@@ -19,7 +19,7 @@ password:{
     },
     avatar:{
         type: String,
-        default:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fcool-profile-pictures&psig=AOvVaw1PkIvzQf-K_RJ8CO2__9T9&ust=1706134871022000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCNiwvPLF9IMDFQAAAAAdAAAAABAE"
+        default:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGhmTe4FGFtGAgbIwVBxoD3FmED3E5EE99UGPItI0xnQ&s"
     },
 
 },{timestamps: true});
